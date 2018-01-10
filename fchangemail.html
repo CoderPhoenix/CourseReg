@@ -1,0 +1,58 @@
+<html>
+<head>
+<script language="JavaScript" type="text/javascript">
+window.history.forward(1);
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript">
+    $(window).on('load',function(){
+        $('#fModalMail').modal('show');
+    });
+</script>
+<style>
+body
+{
+background-image:url("photo_bg.jpg");
+}
+</style>
+</head>
+<body>
+
+<div class="modal fade text-center" id="fModalMail">
+    <div class="modal-dialog">
+       <div class="modal-content">
+<div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" onclick = "location.href='faculty.jsp';">&times;</button>
+          <h4 class="modal-title">Change Faculty Mail</h4>
+</div>
+<div class="modal-body">
+          <form class="form-horizontal" action="fchangemaildb.jsp" method="post">
+              <div class="form-group">
+                  <div class="col-sm-10">
+                     <input type="email" maxlength="30" style="margin-left:45px" class="form-control" id="fmail1" placeholder="Enter old mail" name="fmail1" required>  </div>
+              </div>
+              <div class="form-group">
+                  <div class="col-sm-10">          
+                     <input type="email" maxlength="30" style="margin-left:45px" class="form-control" id="fmail2" placeholder="Enter new mail" name="fmail2" required> </div>
+              </div>
+              <div class="form-group">        
+                   <div class="col-sm-offset-2 col-sm-10">
+                      <button type="submit" style="margin-left:150px" class="btn btn-default">Submit</button>
+                   </div>
+              </div>
+      </form>
+</div>
+</div>
+</div>
+</div>
+<script>
+$('#fModalMail').modal({
+    backdrop: 'static',
+    keyboard: false
+})
+</script>
+</body>
+</html>

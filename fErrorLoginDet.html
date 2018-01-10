@@ -1,0 +1,97 @@
+<head>
+<style>
+h2
+{
+margin-left:70px;
+}
+::placeholder { 
+    color:black;
+    opacity: 1; 
+}
+
+body, html {
+font-family:'Comic Sans MS', cursive, sans-serif;
+color:black;
+    height: 100%;
+    margin: 0;
+}
+.bg {
+    background-image:url("photo_bg.jpg");
+      background-position: center;
+	  background-repeat:no-repeat;
+	  background-size: cover;
+	  height:100%; 
+	position:relative;
+}
+.bg1
+{
+ background: rgba(150, 100, 50, 0.3);
+position:absolute;
+top:30%;
+left:60%;
+right:6%;
+bottom:5%;
+border: 3px solid black;
+}
+
+input
+{
+ font-size:27px;
+ display:in-line; 
+ margin-left:6.5%;
+ padding-left:2%;
+ padding-right:2%;
+ padding-top:2%;
+ padding-bottom:2%;
+}
+.bg2
+{
+ background: rgba(150, 100, 50, 0.3);
+text-align:center;
+position:relative;
+top:0px;
+left:0px;
+right:40%;
+bottom:70%;
+border: 0.2px solid black;
+}
+</style>
+</head>
+
+<body>
+<div class="bg">
+<div class="bg2"><h1 style="margin-left:0px;font-size:50px;color:black;font-family:'Trebuchet MS', Helvetica, sans-serif">JNTU ELECTIVE PORTAL</h1></div>
+<h1 style="color:black;margin-top:13%;margin-left:11%">Hello people</h1>
+
+<ul style="margin-left:8%;padding-left:0px;font-family:'Comic Sans MS', cursive, sans-serif">
+<li><h2 style="color:black;text-align:left;margin-top:2%;">Welcome to the website </h2></li>
+<li><h2 style="color:black;text-align:left;">Please click login if u are using website for the first time</h2></li>
+<li><h2 style="color:black;text-align:left;">OTP will be sent to your mail please check and login</h2></li>
+<li><h2 style="color:black;text-align:left;">If u have forgotten password then click forgot password</h2></li>
+</ul>
+<div class="bg1">
+
+<h1 style="color:black;text-align:center">LOGIN FORM</h1>
+<hr/>
+<form action="fselec.jsp" method="post">
+<h2 style="color:white">Please enter appropriate details .. </h2>
+<h2><input align="center"placeholder="Username"style="color:black;  background: rgba(150, 100, 50, 0.3);border:2px solid black;margin-top:5%;font-family:'Comic Sans MS', cursive, sans-serif
+"size="20" maxlength="10" type="text" name="fusn" required>
+<br><br>
+<input align="center" placeholder="Password"style="color:black;background: rgba(150, 100, 50, 0.3);border:2px solid black;
+font-family:'Comic Sans MS', cursive, sans-serif
+"size="20" maxlength="10" type="password" name="fpwd" >
+<br><br>
+<input type="radio" name="fopt" value="log" required>Login
+<input type="radio" name="fopt" value="forgot">Forgot-Password
+<br></h2>
+<input style="margin-top:3%;width:45%;padding:0.5% 0.5% 0.5% 0.5%;margin-left:30%; background: rgba(150, 100, 50, 0.3);
+;border: 3px solid black;
+" type="submit" value="submit">
+
+</form>
+
+</div>
+
+</div>
+</body>
